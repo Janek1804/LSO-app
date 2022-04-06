@@ -6,6 +6,8 @@ db_cursor=db_connect.cursor()
 now = datetime.now()
 
 print("Current time=",now)
-
+m=now.strftime("%B")
 if now.day==1:
-    cursor.execute(f"CREATE TABLE ")
+    db_cursor.execute(f"CREATE TABLE {m}"
+     "pk int(10) NOT NULL AUTO_INCREMENT PRIMARY KEY"
+     "Imię varchar(255)")
