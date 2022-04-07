@@ -8,4 +8,4 @@ now = datetime.now()
 print("Current time=",now)
 
 if now.day==1:
-    cursor.execute(f"CREATE TABLE ")
+    db_cursor.execute(f"CREATE TABLE ")
