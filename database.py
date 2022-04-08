@@ -11,5 +11,6 @@ if now.day==1:
     db_cursor.execute(f"CREATE TABLE {m}"
      "pk int(10) NOT NULL AUTO_INCREMENT PRIMARY KEY"
      "Imię varchar(255)")
-def insert():
-    db_cursor.execute()
+def insert(table, pk,Imię):
+    db_cursor.execute(f"INSERT INTO {table} (pk,Imię)"
+    "VALUES ({pk},{Imię})")
